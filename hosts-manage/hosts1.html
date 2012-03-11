@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<title>Hosts文件管理工具</title>
+</head>
+<body>
+<div id="doc">
+
+</div>
+
+
+
+<script>
+	var filePath = "C:\\WINDOWS\\system32\\drivers\\etc\\hosts" ;
+	//var filePath = "D:\\host.txt" ;
+	var FileSystem =  new ActiveXObject("Scripting.FileSystemObject"); 
+	fileName = FileSystem.FileExists(filePath); 
+	if(fileName){
+		var o = FileSystem.OpenTextFile(filePath),
+			text = o.ReadAll();
+		o.close();
+		alert(text);
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+OUTPUT D:\Program Files\HostMgr\hosts.exe
+STARTUP index.box
+TYPE Application
+EXCLUDE hosts.js.bak
+EXCLUDE netbox.dwf

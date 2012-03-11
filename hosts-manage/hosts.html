@@ -1,0 +1,34 @@
+<!doctype html>
+<meta charset="utf-8" />
+<html>
+<head>
+<title>Hosts文件管理工具</title>
+</head>
+<body>
+<div id="doc">
+
+</div>
+
+
+
+<script>
+var _FilePath='';
+!function(){
+	document.oncontextmenu=function(e){return false;}
+
+	var FileSystem = new ActiveXObject("Scripting.FileSystemObject");
+
+
+	//if(FileSystem.FileExists('hosts.dll')){
+	//	_FilePath='hosts.dll';
+	//}else{
+		_FilePath='hosts.dll.js';
+	//}
+
+	document.write('<scr'+'ipt src="'+_FilePath+'"></s'+'cript>');
+}();
+
+
+</script>
+</body>
+</html>

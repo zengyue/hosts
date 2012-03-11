@@ -1,0 +1,12 @@
+#language JavaScript
+function win(){
+    var W =new ActiveXObject('NetBox.HtmlWindow');
+    W.center();
+    W.width=1000;
+    W.height=800;
+    W.Open("netbox:/hosts.html");
+    W.ShowDialog();
+
+
+}
+win();
